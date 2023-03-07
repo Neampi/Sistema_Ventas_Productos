@@ -15,10 +15,7 @@ class loginUsu(QMainWindow):
         self.ln.setupUi(self)
         self.bd=Conexion()
 
-        #DESAPARECER BORDES
         
-        #ELIMINAR 
-
 
         #CONEXION DE BOTONES
         self.ln.logButton.clicked.connect(self.login_activate)

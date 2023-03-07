@@ -15,6 +15,11 @@ class principal_process(QMainWindow):
         self.prin=Ui_principal_w()
         self.prin.setupUi(self)
 
+        #DESAPARECER BORDES
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        #ELIMINAR 
+        self.setWindowFlag(Qt.FramelessWindowHint)
+
        
         #INSTANCIAR CONEXION DE BASE DE DATOS 
         self.bd=Conexion()
